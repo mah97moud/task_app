@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:task_app/shared/cubit/cubit.dart';
+import 'package:task_app/shared/cubit/states.dart';
 
 class HomeScreen extends StatelessWidget {
-  final String userName;
-
-  const HomeScreen({this.userName});
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Home Screen'),
+    return BlocConsumer<AppCubit, AppStates>(
+      builder: (context, state) {
+        return Center(
+          child: Text('Welcome To Search App'),
+        );
+      },
+      listener: (context, state) {},
     );
   }
 }
+
+//
