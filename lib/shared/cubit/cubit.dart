@@ -13,6 +13,7 @@ class AppCubit extends Cubit<AppStates> {
 
   int currentIndex = 0;
   String urlName = '';
+  var address;
 
   List<Widget> screenList = [
     HomeScreen(),

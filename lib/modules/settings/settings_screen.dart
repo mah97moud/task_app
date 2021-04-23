@@ -68,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
                               child: Text('Search'),
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
